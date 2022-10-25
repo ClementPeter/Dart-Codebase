@@ -48,30 +48,30 @@
 
 
 
-// //SWITCH CASE
+//SWITCH CASE
 
-// void main() {
-//   String grade = "B";
+void main() {
+  String grade = "B";
 
-//   switch (grade) {
-//     case 'A':
-//       print("Excellent");
-//       break;
-//     case 'B':
-//       print("V GOOD");
-//       break;
-//     case 'C':
-//       print("GOOD");
-//       break;
-//     case 'D':
-//       print("PASS");
-//       break;
-//     case 'F':
-//       print("FAIL");
-//       break;
+  switch (grade) {
+    case 'A':
+      print("Excellent");
+      break;
+    case 'B':
+      print("V GOOD");
+      break;
+    case 'C':
+      print("GOOD");
+      break;
+    case 'D':
+      print("PASS");
+      break;
+    case 'F':
+      print("FAIL");
+      break;
 
-//     default:
-//       print("Invalid input");
-//   }
-// }
+    default:
+      print("Invalid input");
+  }
+}
 
