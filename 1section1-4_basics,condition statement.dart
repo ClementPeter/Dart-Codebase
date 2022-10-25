@@ -1,4 +1,4 @@
-//IF STATEMENTS
+////IF STATEMENTS
 // int salary =1000;
 
 // void main() {
