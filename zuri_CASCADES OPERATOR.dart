@@ -27,12 +27,6 @@ class Person {
 
 
 
-
-
-
-
-
-
 //
 class BigObject {
   int anInt = 0;
