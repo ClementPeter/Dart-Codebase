@@ -1,4 +1,4 @@
-ENCAPSULATION
+//ENCAPSULATION
 void main() {
   Car car = Car(brand BMW, paint indigo, tyre 4);
 
