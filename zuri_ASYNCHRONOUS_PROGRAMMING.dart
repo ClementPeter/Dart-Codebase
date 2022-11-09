@@ -31,16 +31,6 @@ Future<String> fetchUserOrder() =>
 
 
 
-
-
-
-
-
-
-
-
-
-
 void main() async {
   countSeconds(4);
   await printOrderMessage();
@@ -65,6 +55,44 @@ void countSeconds(int s) {
   for (var i = 1; i <= s; i++) {
     Future.delayed(Duration(seconds: i), () => print(i));
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void main() async {
+//   //Synchronous
+//   String name = "Robot";
+//   var theName = sayName(name);
+//   print(theName);
+
+  //Asynchronous
+  var exepectedName = await printName("Peter");
+  print(exepectedName);
+  
+}
+
+
+ //Asynchronous
+Future<String?> printName(String? name) async {
+  print("Function Started");
+  await Future.delayed(Duration(seconds: 3));
+  return name;
+}
+
+//Synchronous
+String? sayName(String? name) {
+  return name;
 }
 
 
