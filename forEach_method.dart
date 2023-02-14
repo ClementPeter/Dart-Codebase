@@ -48,3 +48,58 @@ class Friend {
   int? age;
   Friend({this.name, this.age});
 }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+void main() {
+  List<String> names = ['John', 'Jane', 'Jim'];
+
+  /////////////////
+
+  names.forEach((name) {
+    name = name.toUpperCase();
+    print("Inside using FOR EACH::::::: $name");
+  });
+
+  print("\n");
+  print("Outside using FOR EACH::::::: $names");
+
+  ////////////////
+  print("\n");
+  print(":::::::USING FOR LOOP::::::::::");
+  //
+  for (int i = 0; i < names.length; i++) {
+    names[i] = names[i].toUpperCase();
+    //print(names[i].toUpperCase());
+  }
+  print("using FOR LOOP::::::: $names");
+
+  //////////////////
+  print("\n");
+  print(":::::::USING FOR-IN LOOP::::::::::");
+
+  for (String name in names) {
+    //upName = name.toUpperCase();
+    print(name.toUpperCase());
+    print("\n");
+  }
+}
+
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
