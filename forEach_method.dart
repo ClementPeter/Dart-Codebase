@@ -115,4 +115,20 @@ void main() {
 }
 
 
+//Advanced example: Using forEach with async and await
+
+// void main() {
+//   Future printDelayedMessage(int delay, String message) async {
+//    await Future.delayed(const Duration(seconds: 1));
+//     print(message);
+//   }
+
+//   List<String> messages = ['message 1', 'message 2', 'message 3'];
+
+//   Future.forEach(messages, (message) async {
+//     await printDelayedMessage(1, message);
+//   });
+// }
+
+
 
