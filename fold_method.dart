@@ -54,14 +54,12 @@
 //
 //FOLD METHOD
 
-//using .fold to Sum Numbers in a list
+//using .fold to Sum Ages of Friends in a list
 
 void main() {
   int sumAges = myFriends.fold(0, (age, friend) {
-    //print(prev);
     return age + friend.age!;
   });
-
   print(sumAges);
 }
 
