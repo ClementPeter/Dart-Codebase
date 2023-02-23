@@ -1,4 +1,5 @@
 //EQUALITY OPERATOR
+//link: https://medium.com/pinch-nl/comparing-objects-in-dart-made-easy-with-equatable-d208e5eb9571#:~:text=The%20most%20obvious%20way%20to,we%20should%20use%20identical()%20
 
 //There is difference between an OBJECT being the SAME and being EQUAL
 
