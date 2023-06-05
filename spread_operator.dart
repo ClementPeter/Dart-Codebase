@@ -1,24 +1,24 @@
-//SPREAD OPERATOR
-//Used in combining List of two or more instance
+SPREAD OPERATOR
+Used in combining List of two or more instance
 
-// void main() {
-//   // Creating lists
-//   List list1 = ['Mango', 'Apple'];
-//   List list2 = ['Orange', 'Avocado', 'Grape'];
-//   List list3 = ['Lemon'];
+void main() {
+  // Creating lists
+  List list1 = ['Mango', 'Apple'];
+  List list2 = ['Orange', 'Avocado', 'Grape'];
+  List list3 = ['Lemon'];
 
-//   // Combining lists with SPREAD OPERATOR
+  // Combining lists with SPREAD OPERATOR
 
-//   List combinedList = [...list1, ...list2, ...list3];
+  List combinedList = [...list1, ...list2, ...list3];
 
-//   // Printing combined list
-//   print("combined list: $combinedList");
+  // Printing combined list
+  print("combined list: $combinedList");
 
-//   // extending newList using spread operator
-//   List newList = ["One", ...list1];
+  // extending newList using spread operator
+  List newList = ["One", ...list1];
 
-//   print(newList);
-// }
+  print(newList);
+}
 
 void main() {
   List<String> values1 = ['one', 'two', 'three'];
