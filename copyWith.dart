@@ -1,10 +1,10 @@
-COPYWITH FUNCTION
-copyWith is a method in Dart that helps to create a new object with
-updated properties, without modifying the original object.
-Helps us to update an object by creating an instance of the original object
-Instead of manually creating a new object with updated properties,
-we can use copyWith to create a new instance of the same class
-with the updated properties
+// COPYWITH FUNCTION
+// copyWith is a method in Dart that helps to create a new object with
+// updated properties, without modifying the original object.
+// Helps us to update an object by creating an instance of the original object
+// Instead of manually creating a new object with updated properties,
+// we can use copyWith to create a new instance of the same class
+// with the updated properties
 
 //1 -Createa a Class
 
