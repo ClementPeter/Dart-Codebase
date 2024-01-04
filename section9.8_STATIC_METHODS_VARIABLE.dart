@@ -24,14 +24,12 @@
 main() {
   int sum = MathUtils.add(10, 10);
   print("Sum: $sum");
-  
-  int maximum = MathUtils.max(100,20);
-   print("Maximum: $maximum");
-  
+
+  int maximum = MathUtils.max(100, 20);
+  print("Maximum: $maximum");
+
   int facto = MathUtils.factorial(3);
   print("Factorial of 3: $facto");
-  
-  
 }
 
 class MathUtils {
@@ -50,6 +48,8 @@ class MathUtils {
     if (n <= 0) {
       return 1;
     }
+    //OR
+    //return n * (n - 1);
     return n * factorial(n - 1);
   }
 }

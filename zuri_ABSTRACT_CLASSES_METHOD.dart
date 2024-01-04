@@ -1,6 +1,12 @@
+/////////
+//ABSTRACT CLASSES AND METHOD
+/////////
+//ABSTRACT CLASSES AND METHOD
+
 //ABSTRACT classes and method
 
-//ABSTRACT CLASSES are like read -only classes, they cannot be instantiated
+//ABSTRACT CLASSES are like read - only classes, they cannot be instantiated
+//But they can be "extend"ed and "implement"ed upon
 
 void main() {
   Car car = Car(brand: "BMW", paint: "indigo", tyre: 4);
@@ -20,14 +26,20 @@ void main() {
 
   boeing747.ignition();
   boeing747.drive();
+
+  final myBenz = Benz();
+  myBenz.ignition();
+  myBenz.drive();
+  myBenz.reverse();
+  myBenz.park();
 }
 
 //ABSTRACT CLASS
 abstract class Vehicle {
-  Vehicle({this.wheels, this.color});
-
   String? color = "black";
-  int? wheels = 4;
+  int? wheels;
+
+  Vehicle({this.color, this.wheels});
 
   ignition(); //ABSTRACT METHOD
 
@@ -52,7 +64,7 @@ class Car extends Vehicle {
 
   Car({this.brand, this.paint, this.tyre}) : super(wheels: tyre, color: paint);
 
-  //To inherit and use an ABSTRACT method it must be overriden
+  //To inherit and use an ABSTRACT method; it must be overriden
   //must override abstract method
   @override
   ignition() {
@@ -76,5 +88,33 @@ class AirPlane extends Vehicle {
   @override
   drive() {
     print("Thrust forward and lift wings");
+  }
+}
+
+class Benz implements Vehicle {
+  @override
+  String? color = 'White';
+
+  @override
+  int? wheels;
+
+  @override
+  drive() {
+    print('Suffrey match that BENZ');
+  }
+
+  @override
+  ignition() {
+    print('Start BENZ');
+  }
+
+  @override
+  park() {
+    print('Holl up that BENZ');
+  }
+
+  @override
+  reverse() {
+    print('Reverse that BENZ');
   }
 }

@@ -5,55 +5,57 @@
 //   }
 //
 
-
-
 //For loop to print even numbers
 //   for (int i = 1; i < 10; i++) {
 //     if (i % 2 == 0) {
 //       print(i);
 //     }
 //   }
-  
+
 // }
 
+// //DO WHILE LOOP
+// void main() {
+//   int i = 1;
 
-
-//DO WHILE LOOP
-void main() {
-  int i = 1;
-
-  do {
-    print("Hello");
-//print(i);
-    i++;
-  } while (i <= 5);
-}
-
+//   do {
+//     print("Hello");
+//     //print(i);
+//     i++;
+//   } while (i <= 5);
+// }
 
 //FOR IN LOOP
+// void main() {
+//   List planetList = ["Mercury", "Venus", "Earth", "Mars"];
+
+//   for (String planet in planetList) {
+//     print(planet);
+//   }
+// }
+
+//BREAK KEWORD USING FOR LOOP
+// void main() {
+//   for (int i = 1; i < 20; i++) {
+//     print(i);
+//     if (i == 5) {
+//       break;
+//     }
+//   }
+// }
+
+//BREAK in FOR-IN Loop
 void main() {
   List planetList = ["Mercury", "Venus", "Earth", "Mars"];
 
   for (String planet in planetList) {
     print(planet);
-  }
-}
 
-
-//BREAK KEWORD USING FOR LOOP
-void main() {
-  for (int i = 1; i < 20; i++) {
-    print(i);
-    if (i == 5) {
+    if (planet == 'Venus') {
       break;
     }
   }
 }
-
-
-
-//
-
 
 // //BREAK KEWORD USING FOR LOOP
 // void main() {
@@ -70,22 +72,19 @@ void main() {
 //   }
 // }
 
-
-
 //
-
 
 //CONTINUE KEYWORD in FOR LOOP
 //CONTINUE helps in skipping and continue
 
-void main() {
-  for (int i = 1; i < 10; i++) {
-    if (i == 5) {
-      continue;
-    }
-    print(i);
-  }
-}
+// void main() {
+//   for (int i = 1; i < 10; i++) {
+//     if (i == 5) {
+//       continue;
+//     }
+//     print(i);
+//   }
+// }
 
 //
 //BREAK KEYOWRD  using LABEL KEYWORD USING FOR LOOP
