@@ -17,19 +17,8 @@
 //     // more complex and slow.
 //     Future.delayed(
 //       const Duration(seconds: 2),
-//       () => 'Large Latte',
+//       () => 'Large and Time consuming Order',
 //     );
-
-
-
-
-
-
-
-
-
-
-
 
 // void main() async {
 //   countSeconds(4);
@@ -41,14 +30,12 @@
 //   var order = await fetchUserOrder();
 //   print('Your order is: $order');
 
-  
 // }
 
 // Future<String> fetchUserOrder() {
 //   // Imagine that this function is more complex and slow.
 //   return Future.delayed(const Duration(seconds: 4), () => 'Large Latte');
 // }
-
 
 // // You can ignore this function - it's here to visualize delay time in this example.
 // void countSeconds(int s) {
@@ -57,44 +44,25 @@
 //   }
 // }
 
+void main() async {
+//   //Synchronous
+//   String name = "Robot";
+//   var theName = sayName(name);
+//   print(theName);
 
+  //Asynchronous
+  var exepectedName = await printName("Peter");
+  print(exepectedName);
+}
 
+//Asynchronous
+Future<String?> printName(String? name) async {
+  print("Function Started");
+  await Future.delayed(Duration(seconds: 3));
+  return name;
+}
 
-
-
-
-
-
-
-
-
-
-
-// void main() async {
-// //   //Synchronous
-// //   String name = "Robot";
-// //   var theName = sayName(name);
-// //   print(theName);
-
-//   //Asynchronous
-//   var exepectedName = await printName("Peter");
-//   print(exepectedName);
-  
-// }
-
-
-//  //Asynchronous
-// Future<String?> printName(String? name) async {
-//   print("Function Started");
-//   await Future.delayed(Duration(seconds: 3));
-//   return name;
-// }
-
-// //Synchronous
-// String? sayName(String? name) {
-//   return name;
-// }
-
-
-
-
+//Synchronous
+String? sayName(String? name) {
+  return name;
+}
