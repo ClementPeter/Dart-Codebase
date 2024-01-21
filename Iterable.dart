@@ -42,52 +42,74 @@
 //
 //
 //
-void main() {
-// Converting all Friend objects to Best Friends Objects
-// use .map to run through the List "myFriend" and MAP it to "BestFriend"
-// and return as an Iterable (List of, bestiesss)
 
-  Iterable<BestFriend> besties = myFriends.map((friend) {
-    return BestFriend(name: friend.name);
-  });
+// void main() {
+// // Converting all Friend objects to Best Friends Objects
+// // use .map to run through the List "myFriend" and MAP it to "BestFriend"
+// // and return as an Iterable (List of, bestiesss)
 
-  //Use for-Each to run through the iterable "bestie"
-  for (var bestie in besties) {
-    print(bestie.say());
-  }
+//   Iterable<BestFriend> besties = myFriends.map((friend) {
+//     return BestFriend(name: friend.name);
+//   });
 
-  ///simplified form from above
-  // myFriends
-  //     .map((friend) => BestFriend(name: friend.name))
-  //     .forEach((bestFriend) => print(bestFriend.say()));
+//   //Use for-Each to run through the iterable "bestie"
+//   for (var bestie in besties) {
+//     print(bestie.say());
+//   }
 
-  // myFriends.map((e) => BestFriend(name: e.name)).forEach((element) {
-  //   print(element.say); //works with getter
-  // });
+//   ///simplified form from above
+//   // myFriends
+//   //     .map((friend) => BestFriend(name: friend.name))
+//   //     .forEach((bestFriend) => print(bestFriend.say()));
 
-  myFriends.map((e) => BestFriend(name: e.name)).forEach((element) {
-    print(element.say());
-  });
-}
+//   // myFriends.map((e) => BestFriend(name: e.name)).forEach((element) {
+//   //   print(element.say); //works with getter
+//   // });
 
-List<Friend> myFriends = [
-  Friend(name: "Peter", age: 20),
-  Friend(name: "Sara", age: 22),
-  Friend(name: "John", age: 23),
-  Friend(name: "Max", age: 24),
-];
+//   myFriends.map((e) => BestFriend(name: e.name)).forEach((element) {
+//     print(element.say());
+//   });
+// }
 
-class Friend {
-  String? name;
-  int? age;
-  Friend({this.name, this.age});
-}
+// List<Friend> myFriends = [
+//   Friend(name: "Peter", age: 20),
+//   Friend(name: "Sara", age: 22),
+//   Friend(name: "John", age: 23),
+//   Friend(name: "Max", age: 24),
+// ];
 
-class BestFriend {
-  String? name;
+// class Friend {
+//   String? name;
+//   int? age;
+//   Friend({this.name, this.age});
+// }
 
-  BestFriend({this.name});
+// class BestFriend {
+//   String? name;
 
-  String say() => "One of my best friend is $name";
-  //String get say => "One of my best friend is $name"; //the same as toString
-}
+//   BestFriend({this.name});
+
+//   String say() => "One of my best friend is $name";
+//   //String get say => "One of my best friend is $name"; //the same as toString
+// }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+///Using Iterable on Maps
+//Can I assign the Iterable data type to a function that returns a Map ?
+// In Dart, the type system is generally strict about types. 
+// If a function is declared to return a Map, 
+// you cannot directly assign it to a variable of type Iterable. 
+// However, you can still use the values returned by the function 
+// as an iterable and perform operations on them.
+
+//Here's an example to illustrate this:
+
+//Function that returns a Map
