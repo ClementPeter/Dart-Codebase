@@ -27,8 +27,6 @@
 //
 //
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-//
-//
 
 //Comparing objects in Dart using IDENTICAL and EQUAL OPERATOR
 // class Car {
