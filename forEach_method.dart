@@ -1,4 +1,3 @@
-//
 //=====================
 // void main() {
 //   /*PRINT NAMES SEPARATELY USING FOR EACH*/
@@ -58,8 +57,6 @@
 // void main() {
 //   List<String> names = ['John', 'Jane', 'Jim'];
 
-//   /////////////////
-
 //   names.forEach((name) {
 //     name = name.toUpperCase();
 //     print("Inside using FOR EACH::::::: $name");
@@ -87,8 +84,6 @@
 // }
 
 //=====================
-//
-//
 //
 //
 //=====================
