@@ -28,7 +28,9 @@ class Person {
 
 void main() {
   Person person = Person(name: "Peter", age: 20);
-  Person copyWithPerson = Person(name: "Peter", age: 30);
+  //Person copyWithPerson = Person(name: "Peter", age: 30);
+
+  Person copyWithPerson = person.copyWith(name: 'David', age: 30);
 
   print(person.name);
   print(person.age);
