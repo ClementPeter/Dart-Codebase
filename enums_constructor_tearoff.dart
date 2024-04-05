@@ -11,7 +11,7 @@
 //Helps us to add additional info to enum constants
 //Assigning color to fruits
 enum Fruit {
-  //1
+  //1 - create enums and additional values
   apple('red'),
   banana('yellow'),
   orange('orange'),
