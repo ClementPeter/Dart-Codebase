@@ -1,4 +1,4 @@
-//Usage of super keyword to pass values from subclasses to parent parameters
+//Usage of super keyword is to pass values from subclasses to parent parameters
 
 //Parent class
 class Vehicle {
@@ -20,8 +20,7 @@ class Bicycle extends Vehicle {
 
 //Warning
 //The superclass 'Vehicle' doesn't have a zero argument constructor.
-//Try declaring a zero argument constructor in 'Vehicle', or
-//declaring a constructor in Bicycle
+//Try declaring a zero argument constructor in 'Vehicle', or declaring a constructor in Bicycle
 //that explicitly invokes a constructor in 'Vehicle'.dart(no_default_super_constructor)
 
 ///Warning
