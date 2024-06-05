@@ -34,4 +34,6 @@ void main(List<String> args) {
     bicycleColor: 'red',
     model: 'bmx',
   );
+
+  print(johnBike);
 }
