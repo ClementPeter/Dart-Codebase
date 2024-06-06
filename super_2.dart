@@ -16,13 +16,13 @@ class Bicycle extends Vehicle {
 
 void main() {
   // Examples of creating Bicycle instances
-  Bicycle bike1 = Bicycle(
-    numberofWheels: 2,
+  Bicycle bike2 = Bicycle(
+    numberofWheels: 3,
     color: 'red',
     model: 'bmx',
   );
 
-  Bicycle bike2 = Bicycle(numberofWheels: 3, color: 'red', model: 'Mountain');
   print(
-      'Bike2: Wheels = ${bike2.numberofWheels}, Color = ${bike2.color}, Model = ${bike2.model}');
+    'Bike2: Wheels = ${bike2.numberofWheels}, Color = ${bike2.color}, Model = ${bike2.model}',
+  );
 }
