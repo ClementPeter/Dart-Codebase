@@ -1,3 +1,9 @@
+//code to make animal speak "N" times
+
+void main(List<String> args) {
+  speakNTimes(2, Animal());
+}
+
 class Animal {
   makeSound() {
     print("Animal make Sound");
@@ -23,8 +29,4 @@ void speakNTimes(int n, Animal animal) {
     throw Exception('');
   }
   print(Cat().makeSound());
-}
-
-void main(List<String> args) {
-  speakNTimes(2, Animal());
 }
