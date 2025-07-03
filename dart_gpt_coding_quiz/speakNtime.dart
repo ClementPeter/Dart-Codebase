@@ -1,7 +1,11 @@
 //code to make animal speak "N" times
 
 void main(List<String> args) {
-  speakNTimes(2, Animal());
+  try {
+    speakNTimes(3, Dog());
+  } catch (e) {
+    print(e);
+  }
 }
 
 class Animal {
@@ -26,7 +30,7 @@ class Cat extends Animal {
 
 void speakNTimes(int n, Animal animal) {
   if (n < 1) {
-    throw Exception('');
+    throw Exception('N is invalid');
   }
   print(Cat().makeSound());
 }
