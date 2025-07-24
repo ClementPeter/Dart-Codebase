@@ -1,41 +1,41 @@
 //INHERITANCE
 
-// void main() {
-//   var dog1 = Dog();
-//   dog1.color = "blue";
+void main() {
+  var dog1 = Dog();
+  dog1.color = "blue";
 
-//   var cat1 = Cat();
-//   cat1.purSound = "mild";
-//   cat1.eat();
-// }
+  var cat1 = Cat();
+  cat1.purSound = "mild";
+  cat1.eat();
+}
 
-// class Animal {
-//   Animal() {
-//     print("Animal Constructor");
-//   }
-//   late String color;
-//   void eat() {
-//    // print("animal eating");
-//   }
-// }
+class Animal {
+  Animal() {
+    print("Animal Constructor");
+  }
+  late String color;
+  void eat() {
+   // print("animal eating");
+  }
+}
 
-// class Dog extends Animal {
-//   Dog() {
-//     print("Dog Constructor");
-//   }
-//   late String breed;
-//   void bark() {}
-// }
+class Dog extends Animal {
+  Dog() {
+    print("Dog Constructor");
+  }
+  late String breed;
+  void bark() {}
+}
 
-// class Cat extends Animal {
-//     Cat() {
-//     print("Dog Constructor");
-//   }
-//   late String purSound;
-//   void meow() {
-//     print("meowing");
-//   }
-// }
+class Cat extends Animal {
+    Cat() {
+    print("Dog Constructor");
+  }
+  late String purSound;
+  void meow() {
+    print("meowing");
+  }
+}
 
 
 
