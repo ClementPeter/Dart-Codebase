@@ -1,9 +1,9 @@
 //For LOOP
-// void main() {
-//   for (int i = 1; i < 5; i++) {
-//     print(i);
-//   }
-//
+void main() {
+  for (int i = 1; i < 5; i++) {
+    print(i);
+  }
+}
 
 //For loop to print even numbers
 //   for (int i = 1; i < 10; i++) {
@@ -45,17 +45,17 @@
 // }
 
 //BREAK in FOR-IN Loop
-void main() {
-  List planetList = ["Mercury", "Venus", "Earth", "Mars"];
+// void main() {
+//   List planetList = ["Mercury", "Venus", "Earth", "Mars"];
 
-  for (String planet in planetList) {
-    print(planet);
+//   for (String planet in planetList) {
+//     print(planet);
 
-    if (planet == 'Venus') {
-      break;
-    }
-  }
-}
+//     if (planet == 'Venus') {
+//       break;
+//     }
+//   }
+// }
 
 // //BREAK KEWORD USING FOR LOOP
 // void main() {
@@ -87,7 +87,7 @@ void main() {
 // }
 
 //
-//BREAK KEYOWRD  using LABEL KEYWORD USING FOR LOOP
+//BREAK KEYOWRD using LABEL KEYWORD USING FOR LOOP
 // void main() {
 //   outerLoop:
 //   for (int i = 1; i <= 3; i++) {
@@ -131,7 +131,6 @@ void main() {
 //     }
 //   }
 // }
-
 
 
 //
